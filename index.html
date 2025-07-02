@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSS Diner Game</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>CSS Diner - Learn CSS Selectors</h1>
+    <div id="level-info">
+      <p><strong>Level 1:</strong> Select the pickle</p>
+    </div>
+    <div class="plate">
+      <div class="item apple"></div>
+      <div class="item pickle" id="target"></div>
+      <div class="item orange"></div>
+    </div>
+    <div class="input-section">
+      <label for="selector">CSS Selector:</label>
+      <input type="text" id="selector" placeholder="e.g. .pickle"/>
+      <button onclick="checkSelector()">Check</button>
+    </div>
+    <div id="feedback"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
